@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
+# DEVCON Iligan Website
 
-## Project info
+Official website for DEVCON Iligan - the local chapter of Developers Connect (DEVCON), the Philippines' largest volunteer tech community.
 
-**URL**: https://lovable.dev/projects/ea71ae8e-0817-4d8c-9380-cbe878fe9b52
+## About DEVCON Iligan
 
-## How can I edit this code?
+DEVCON Iligan serves Iligan City and Lanao del Norte, building a strong, inclusive, and future-ready tech community since 2022. We're part of the national DEVCON network that has been organizing tech unconferences, hackathons, and innovation challenges across the Philippines since 2009.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Responsive Design**: Mobile-first approach with excellent user experience across all devices
+- **Accessibility**: WCAG compliant with proper ARIA labels and keyboard navigation
+- **Modern Tech Stack**: Built with React, TypeScript, Tailwind CSS, and Vite
+- **Volunteer System**: Integrated volunteer registration and management
+- **Contact Integration**: Direct links to Facebook page and iDEYA at MSU-IIT
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ea71ae8e-0817-4d8c-9380-cbe878fe9b52) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Build Tool**: Vite
+- **UI Components**: Custom component library with shadcn/ui
+- **Backend**: Supabase for data management
+- **Deployment**: Ready for modern hosting platforms
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd devcon-iligan-website
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components
+│   ├── About.tsx       # About section
+│   ├── Contact.tsx     # Contact section
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   └── Footer.tsx      # Site footer
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── VolunteerForm.tsx # Volunteer registration
+│   └── EventSelection.tsx # Event selection
+├── lib/                # Utilities and configurations
+├── hooks/              # Custom React hooks
+└── index.css          # Global styles and design system
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Design System
 
-## What technologies are used for this project?
+The website uses a comprehensive design system based on the DEVCON brand:
 
-This project is built with:
+- **Colors**: Purple (#6600FF), Orange (#EA641D), Yellow (#E6B800), Green (#5BB318)
+- **Typography**: Proxima Nova font family
+- **Components**: Consistent spacing, shadows, and interactions
+- **Responsive**: Mobile-first approach with smooth transitions
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Key Features
 
-## How can I deploy this project?
+### 🎨 Enhanced UI/UX
+- Modern, professional design
+- Smooth animations and micro-interactions
+- Consistent brand identity throughout
 
-Simply open [Lovable](https://lovable.dev/projects/ea71ae8e-0817-4d8c-9380-cbe878fe9b52) and click on Share -> Publish.
+### 📱 Mobile Responsive
+- Optimized for all screen sizes
+- Touch-friendly interface
+- Progressive enhancement
 
-## Can I connect a custom domain to my Lovable project?
+### ♿ Accessibility
+- WCAG AA compliant
+- Screen reader support
+- Keyboard navigation
+- Proper focus management
 
-Yes, you can!
+### 🚀 Performance
+- Optimized build process
+- Lazy loading components
+- Modern web standards
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Scripts
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
+
+## Contact
+
+- **Facebook**: [DEVCON Iligan FB Page](https://facebook.com/devconiligan)
+- **Visit**: iDEYA at MSU-IIT, Iligan City, Lanao del Norte
+- **Email**: hello@devconiligan.com
+
+## Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**DEVCON Iligan** - Building the future of technology in Northern Mindanao, one connection at a time.

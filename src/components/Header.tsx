@@ -37,7 +37,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/e8aae85f-affb-4e2c-a12c-d4dc0b8dfea3.png" 
+                src="/devcon-logo.svg" 
                 alt="DEVCON Iligan Logo" 
                 className="h-6 lg:h-8"
               />
