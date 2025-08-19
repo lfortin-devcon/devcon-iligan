@@ -1,10 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Users, GraduationCap, ArrowRight, Calendar, Clock, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import {
-  DraggableCardBody,
-  DraggableCardContainer,
-} from "@/components/ui/draggable-card";
 
 const EventSelection = () => {
   const navigate = useNavigate();
@@ -39,8 +36,8 @@ const EventSelection = () => {
         {/* Event Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* DEVCON GeekUp Card */}
-          <DraggableCardBody className="bg-devcon-orange w-full h-auto shadow-lg border-0 rounded-2xl">
-            <div className="h-full flex flex-col p-6">
+          <Card className="bg-devcon-orange w-full h-auto shadow-lg border-0 rounded-2xl hover:shadow-xl transition-shadow duration-300">
+            <CardContent className="h-full flex flex-col p-6">
               <div className="text-left flex-grow">
                 <h2 className="text-2xl font-extrabold text-white font-brand mb-4 drop-shadow-sm">
                   DEVCON GeekUp
@@ -69,17 +66,17 @@ const EventSelection = () => {
               <div className="mt-auto">
                 <Button 
                   onClick={() => handleEventSelect('devcon-geekup')}
-                  className="w-full bg-white hover:bg-white/90 text-devcon-orange font-brand font-bold text-base py-3 rounded-lg transition-all duration-300"
+                  className="w-full bg-white hover:bg-white/90 text-devcon-orange font-brand font-bold text-base py-3 rounded-lg transition-colors duration-200"
                 >
                   Volunteer
                 </Button>
               </div>
-            </div>
-          </DraggableCardBody>
+            </CardContent>
+          </Card>
 
           {/* Campus DEVCON Card */}
-          <DraggableCardBody className="bg-devcon-green w-full h-auto shadow-lg border-0 rounded-2xl">
-            <div className="h-full flex flex-col p-6">
+          <Card className="bg-devcon-green w-full h-auto shadow-lg border-0 rounded-2xl hover:shadow-xl transition-shadow duration-300">
+            <CardContent className="h-full flex flex-col p-6">
               <div className="text-left flex-grow">
                 <h2 className="text-2xl font-extrabold text-white font-brand mb-4 drop-shadow-sm">
                   Campus DEVCON
@@ -108,13 +105,13 @@ const EventSelection = () => {
               <div className="mt-auto">
                 <Button 
                   onClick={() => handleEventSelect('campus-devcon')}
-                  className="w-full bg-white hover:bg-white/90 text-devcon-green font-brand font-bold text-base py-3 rounded-lg transition-all duration-300"
+                  className="w-full bg-white hover:bg-white/90 text-devcon-green font-brand font-bold text-base py-3 rounded-lg transition-colors duration-200"
                 >
                   Volunteer
                 </Button>
               </div>
-            </div>
-          </DraggableCardBody>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Additional Info */}
