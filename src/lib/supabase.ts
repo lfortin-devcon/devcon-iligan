@@ -11,11 +11,29 @@ export type VolunteerApplication = {
   last_name: string
   email: string
   phone?: string
+  facebook_link?: string
+  school_organization?: string
+  field_of_interest?: string
+  team_preferences?: string
   event: string
-  skills: string
+  volunteer_type: string
+  committee: string
+  skills?: string
   experience?: string
-  motivation: string
+  motivation?: string
   availability?: string
+  created_at?: string
+  updated_at?: string
+}
+
+export type Member = {
+  id?: string
+  first_name: string
+  last_name: string
+  email: string
+  phone?: string
+  skills?: string
+  experience?: string
   created_at?: string
   updated_at?: string
 }

@@ -7,7 +7,7 @@ const EventSelection = () => {
   const navigate = useNavigate();
 
   const handleEventSelect = (eventType: string) => {
-    navigate(`/volunteer/form?event=${eventType}`);
+    navigate(`/volunteer/type?event=${eventType}`);
   };
 
   return (
@@ -50,15 +50,15 @@ const EventSelection = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-3 text-sm">
                     <Calendar className="w-4 h-4 text-white/80" />
-                    <span className="font-brand font-semibold text-white">March 15, 2024</span>
+                    <span className="font-brand font-semibold text-white">August 24, 2025</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <Clock className="w-4 h-4 text-white/80" />
-                    <span className="font-brand text-white/90">6:00 PM - 9:00 PM</span>
+                    <span className="font-brand text-white/90">1:00 PM - 5:00 PM</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <MapPin className="w-4 h-4 text-white/80" />
-                    <span className="font-brand text-white/90">Iligan City Convention Center</span>
+                    <span className="font-brand text-white/90">Digital Creative Hubs</span>
                   </div>
                 </div>
               </div>
@@ -89,15 +89,15 @@ const EventSelection = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-3 text-sm">
                     <Calendar className="w-4 h-4 text-white/80" />
-                    <span className="font-brand font-semibold text-white">March 20-22, 2024</span>
+                    <span className="font-brand font-semibold text-white">October 28, 2024</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <Clock className="w-4 h-4 text-white/80" />
-                    <span className="font-brand text-white/90">9:00 AM - 5:00 PM</span>
+                    <span className="font-brand text-white/90">8:00 AM - 4:00 PM</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <MapPin className="w-4 h-4 text-white/80" />
-                    <span className="font-brand text-white/90">Various Universities</span>
+                    <span className="font-brand text-white/90">MSU-IIT Gymnasium</span>
                   </div>
                 </div>
               </div>

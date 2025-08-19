@@ -21,7 +21,7 @@ const Header = () => {
         <div
           className={`max-w-6xl mx-auto transition-all duration-300 relative ${
             isScrolled
-              ? "bg-white/95 backdrop-blur-md shadow-lg"
+              ? "bg-white/80 backdrop-blur-xl shadow-xl border border-white/20"
               : "bg-white/90 backdrop-blur-sm shadow-md"
           } rounded-full px-4 py-3 sm:px-6 sm:py-4 mt-2 md:mt-4`}
         >
@@ -39,7 +39,7 @@ const Header = () => {
               <img 
                 src="/devcon-iligan-logo.svg" 
                 alt="DEVCON Iligan Logo" 
-                className="h-8 lg:h-10"
+                className="h-10 lg:h-12"
               />
             </div>
 
