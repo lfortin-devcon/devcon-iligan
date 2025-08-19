@@ -35,15 +35,12 @@ const Header = () => {
           />
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
-                src="/devcon-logo.svg" 
+                src="/devcon-iligan-logo.svg" 
                 alt="DEVCON Iligan Logo" 
-                className="h-6 lg:h-8"
+                className="h-8 lg:h-10"
               />
-              <span className="font-brand font-extrabold text-devcon-dark-gray text-sm lg:text-base leading-none">
-                ILIGAN
-              </span>
             </div>
 
             {/* Navigation and Actions */}

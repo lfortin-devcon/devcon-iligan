@@ -1,0 +1,18 @@
+<svg width="240" height="80" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- DEVCON text -->
+  <text x="0" y="50" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#4A4A4A">DEVC</text>
+  
+  <!-- Four colored circles -->
+  <g transform="translate(140, 15)">
+    <circle cx="0" cy="0" r="12" fill="#E6B800" />   <!-- Yellow -->
+    <circle cx="18" cy="0" r="12" fill="#EA641D" />  <!-- Orange -->
+    <circle cx="0" cy="18" r="12" fill="#6600FF" />  <!-- Purple -->
+    <circle cx="18" cy="18" r="12" fill="#5BB318" /> <!-- Green -->
+  </g>
+  
+  <!-- N text -->
+  <text x="176" y="50" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#4A4A4A">N</text>
+  
+  <!-- ILIGAN text -->
+  <text x="0" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#4A4A4A">ILIGAN</text>
+</svg>
