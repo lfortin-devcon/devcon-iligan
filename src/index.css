@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DEVCON Iligan Design System - Modern Conference Branding */
+
+@layer base {
+  :root {
+    /* DEVCON Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 27%;
+    
+    --devcon-dark-gray: 0 0% 27%;
+    --devcon-white: 0 0% 100%;
+    --devcon-yellow: 53 95% 46%;
+    --devcon-orange: 19 89% 52%;
+    --devcon-purple: 257 100% 52%;
+    --devcon-green: 81 89% 37%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 27%;
+
+    --primary: 0 0% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 27%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 53 95% 46%;
+    --accent-foreground: 0 0% 27%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 53 95% 46%;
+    
+    /* DEVCON Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--devcon-purple)), hsl(var(--devcon-orange)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--devcon-yellow)), hsl(var(--devcon-green)));
+    --gradient-brand: linear-gradient(45deg, hsl(var(--devcon-yellow)), hsl(var(--devcon-orange)), hsl(var(--devcon-purple)), hsl(var(--devcon-green)));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--devcon-purple) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--devcon-yellow) / 0.3);
+    --shadow-header: 0 4px 20px -4px hsl(var(--devcon-dark-gray) / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-brand;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Improve focus visibility for accessibility */
+  *:focus {
+    @apply outline-2 outline-offset-2 outline-devcon-purple;
+  }
+  
+  /* Better touch targets for mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  
+  /* DEVCON Typography - Proxima Nova */
+  .font-brand {
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .devcon-heading {
+    @apply font-brand tracking-wider;
+    font-weight: 800;
+  }
+  
+  .devcon-title {
+    @apply devcon-heading text-5xl lg:text-6xl;
+  }
+  
+  .devcon-subtitle {
+    @apply devcon-heading text-3xl lg:text-4xl;
+  }
+}
+
+@layer components {
+  /* DEVCON Component Variants */
+  .btn-hero {
+    @apply bg-accent text-accent-foreground hover:shadow-glow transition-all duration-300 hover:scale-105 font-brand font-bold tracking-wide px-8 py-4 text-lg rounded-lg;
+  }
+  
+  .btn-gradient {
+    background: var(--gradient-hero);
+    @apply text-white hover:shadow-elegant transition-all duration-300 hover:scale-105 font-brand font-bold tracking-wide px-8 py-4 text-lg rounded-lg border-0;
+  }
+  
+  /* Enhanced hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow;
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    @apply animate-spin border-2 border-current border-t-transparent rounded-full;
+  }
+  
+  .header-glass {
+    @apply backdrop-blur-md bg-white/80 border-b border-border/50;
+    box-shadow: var(--shadow-header);
+  }
+  
+  .brand-circle {
+    @apply w-6 h-3 rounded;
+  }
+  
+  .brand-circle-yellow {
+    @apply brand-circle bg-yellow-400;
+    background-color: hsl(var(--devcon-yellow));
+  }
+  
+  .brand-circle-orange {
+    @apply brand-circle bg-orange-500;
+    background-color: hsl(var(--devcon-orange));
+  }
+  
+  .brand-circle-purple {
+    @apply brand-circle bg-purple-600;
+    background-color: hsl(var(--devcon-purple));
+  }
+  
+  .brand-circle-green {
+    @apply brand-circle bg-green-500;
+    background-color: hsl(var(--devcon-green));
+  }
+}
